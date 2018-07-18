@@ -1,0 +1,42 @@
+.Toolbar {
+  height: 56px;
+  background-color: rgba(80, 125, 133, 1);
+
+  position: fixed;
+  width: 100%;
+  display: flex;
+  left: 0;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2 20px;
+  box-sizing: border-box;
+  z-index: 90;
+
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.Menu {
+  height: 80%;
+  align-items: center;
+  color: white;
+  font-style: bold;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+@media (max-width: 499px) {
+  .conditional {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .Menu {
+    display: none;
+  }
+}
