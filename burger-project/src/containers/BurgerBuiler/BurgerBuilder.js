@@ -53,17 +53,7 @@ cancleHandler = () => {
 
 //  This handler will handle the event when user clicked on continue button after order button
 continueHandler = () => {
-    let queryArray = [];
-    for(let ele in this.props.ingredient)
-    {
-      queryArray.push(encodeURIComponent(ele) + "=" + encodeURIComponent(this.props.ingredient[ele]));
-    }
-      queryArray.push("price="+this.props.price);
-      queryArray = queryArray.join("&");
-    this.props.history.push({
-      pathname: "/Checkout",
-      search: "?" + queryArray
-    });
+    this.props.history.push("/Checkout");
     this.setState({spinner: false});
 }
 
